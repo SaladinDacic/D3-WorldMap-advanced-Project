@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+svg, select{
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(225, 239, 243);
+}
+svg{
+    height: 80vh;
+
+}
+
+path{
+    stroke:#ccc;
+    stroke-width: 0.25px;
+}
+
+
+.tooltip{
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    background-color: lightblue;
+    padding: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+  }
+  
+  .tooltip:before{
+    content: " ";
+    position: absolute;
+    border: 12px solid transparent;
+    border-bottom-color: black;
+    top: -28px;
+    left: 48%;
+    margin-left: -6px;
+  }
+  
+  .tooltip p{
+    margin: 0;
+  }
